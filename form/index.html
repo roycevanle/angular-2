@@ -63,7 +63,7 @@
 				</div>			
 
 				<!-- Email -->
-				<div class="form-group">
+				<div class="form-group" ng-class="{'has-error' : myform.email.$touched && myForm.email.$invalid}">
 					<label>Email:</label>
 					<input  name="email" type="email" class="form-control" ng-required="true" ng-model="user.email" required></input>
 					<p ng-show="myForm.email.$error.email" class="help-block">I request a valid email sir/mam.</p>	
